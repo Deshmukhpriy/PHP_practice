@@ -23,10 +23,10 @@
             </div>
             <ul class="list-unstyled components">
             <li class="active">
-            <a href="user_list.php">User list</a>
+            <a href="student_list.php">User list</a>
              </li>
             <li>
-            <a href="add_user.php">Add User</a>
+            <a href="add_student.php">Add User</a>
             </li>
              </ul>
         </nav>
