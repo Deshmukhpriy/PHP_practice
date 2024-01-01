@@ -14,10 +14,10 @@ if (isset($_POST['submit'])) {
     $zip = $_POST['zip'];
     
 
-    $add = mysqli_query($con, "INSERT INTO `user`(`full_name`, `contact`, `email`,`birth_date`,`address`,`city`,`state`,`zip`) 
+    $add = mysqli_query($con, "INSERT INTO `student`(`full_name`, `contact`, `email`,`birth_date`,`address`,`city`,`state`,`zip`) 
     VALUES ('$full_name','$contact','$email','$birth_date','$address','$city','$state','$zip')");
     if ($add) {
-        header('Location: user_list.php');
+        header('Location: student_list.php');
     } else {
         echo "error";
     }
