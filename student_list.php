@@ -3,7 +3,7 @@
 $con = mysqli_connect('localhost', 'root', '', 'my_crud');
 
 //Select all data from database
-$selectData = mysqli_query($con, "SELECT * FROM `user`");
+$selectData = mysqli_query($con, "SELECT * FROM `student`");
 ?>
 <!DOCTYPE html>
 <head>
@@ -14,7 +14,7 @@ $selectData = mysqli_query($con, "SELECT * FROM `user`");
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
    <form class="d-flex">
-     <a class="btn btn-outline-info" type="submit" href="add_user.php">Add User</a>
+     <a class="btn btn-outline-info" type="submit" href="add_student.php">Add User</a>
       </form>
     </div>
   </div>
@@ -51,8 +51,8 @@ $selectData = mysqli_query($con, "SELECT * FROM `user`");
       <td> <?php echo $getData['state'] ?></td>
       <td> <?php echo $getData['zip'] ?></td>
       <td>
-    <a href="edit_user.php?id=<?php echo $getData['id'] ?>" class="btn btn-success">Edit </a>
-    <a href="delete_user.php?id=<?php echo $getData['id'] ?>" class="btn btn-danger">Delete </a>
+    <a href="edit_student.php?id=<?php echo $getData['id'] ?>" class="btn btn-success">Edit </a>
+    <a href="delete_student.php?id=<?php echo $getData['id'] ?>" class="btn btn-danger">Delete </a>
     </td>
     </tr>
     <?php
